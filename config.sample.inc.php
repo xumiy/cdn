@@ -2,8 +2,8 @@
 	//Layer CDN 设定
 	
 	/**********基本设定**********/
-	define('STATIC_URL','http://www.baidu.com/');	//源站URL
-	define('DOMAIN','layercdn');	//使用云存储时，填写存储空间的名字；使用本地存储时，填写存储的相对路径。
+	define('STATIC_URL','192.243.119.202');	//源站URL
+	define('DOMAIN','cache');	//使用云存储时，填写存储空间的名字；使用本地存储时，填写存储的相对路径。
 	define('WELCOME_DOC',TRUE);	//空请求时是否显示欢迎界面
 	
 	/*********防盗链设定*********/
@@ -20,9 +20,9 @@
 	define('NO_LOCATE',false);	//设置后将不进行跳转而采用read读取方式，可能会降低速度并增加流量。仅当遇到问题时启用。
 	define('NO_KEY',true);	//启用后将不再使用一串md5编码的key作为文件名，当想保持文件名一致时启用之。
 	define('NO_SECOND_FLODER',true);	//启用后将不再使用两层文件夹存储缓存，仅在本地环境、NO_KEY为假时有效。
-	define('STATIC_HOST','');	//可以留空，也可以在这里填写你的源站域名，而在STATIC_URL中填写IP，减少域名解析的时间。
+	define('STATIC_HOST','res.xumiy.com');	//可以留空，也可以在这里填写你的源站域名，而在STATIC_URL中填写IP，减少域名解析的时间。
 	
 	/**********高级设定**********/
-	//define('RUN_ENV', 'GCS');	//自定义运行环境（如不去掉前面的//则自动判断）可选：BAE/SAE/GCS/LOCAL 请大写
+	define('RUN_ENV', 'LOCAL');	//自定义运行环境（如不去掉前面的//则自动判断）可选：BAE/SAE/GCS/LOCAL 请大写
 	//define('CS_AK','dummy');	//自定义云存储空间的Access Token，通常不需要
 	//define('CS_SK','dummy');	//自定义云存储空间的Secret Token，通常不需要
